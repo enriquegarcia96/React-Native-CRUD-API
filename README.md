@@ -1,15 +1,17 @@
-# React-Native-CRUD-API
+# React Native CRUD API
 
 ## Instalar react-navigation/native
-npm install @react-navigation/native
+`npm install @react-navigation/native`
 
 ## Instalar las dependencias
 
-npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+`npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view`
+`npm install react-native-paper`
+
 
 ## Instalar navegación en Stack
 
-npm i @react-navigation/stack
+`npm i @react-navigation/stack`
 
 ## Si desarrollas una app para iOS 
 
