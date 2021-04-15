@@ -8,6 +8,7 @@
 `npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view`
 `npm install react-native-paper`
 `npm install --save react-native-vector-icons`
+`npm install axios`
 
 
 ## Instalar navegación en Stack
