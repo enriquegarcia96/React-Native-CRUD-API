@@ -34,3 +34,8 @@ import 'react-native-gesture-handler';
 <img width="160px" src="https://user-images.githubusercontent.com/46203192/114966988-df7c0d80-9e30-11eb-8697-4d56257860c0.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114967040-f7ec2800-9e30-11eb-99d5-aa58aff21cf2.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114967135-1ce09b00-9e31-11eb-84ed-17c84fc33bba.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114967154-266a0300-9e31-11eb-8ade-0adcdf1860e9.jpeg" align="center" alt="GitHub Readme Stats" />  <img width="160px" src="https://user-images.githubusercontent.com/46203192/114967170-2e29a780-9e31-11eb-8945-681e2a1e7ec3.jpeg" align="center" alt="GitHub Readme Stats" />  <img width="160px" src="https://user-images.githubusercontent.com/46203192/114967195-397cd300-9e31-11eb-9ebe-c5ca4aee8fe4.jpeg" align="center" alt="GitHub Readme Stats" />  <img width="160px" src="https://user-images.githubusercontent.com/46203192/114967309-747f0680-9e31-11eb-8036-18a05e7bc235.jpeg" align="center" alt="GitHub Readme Stats" />
 
 
+# Icono del proyecto
+<img width="160px" src="https://user-images.githubusercontent.com/46203192/114967763-464df680-9e32-11eb-815f-ed7e4da914b1.jpeg" align="center" alt="GitHub Readme Stats" />
+
+
+
