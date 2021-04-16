@@ -1,4 +1,4 @@
-# React Native ⚛ CRUD API USANDO JSON.SERVER SIMULADO UNA API FALSA.
+# REACT NATIVE ⚛ CRUD API USANDO JSON.SERVER SIMULADO UNA API FALSA.
 
 ## Instalar react-navigation/native
 `npm install @react-navigation/native`
