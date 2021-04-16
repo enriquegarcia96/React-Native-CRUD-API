@@ -1,3 +1,32 @@
 {
-    "clientes": []
+  "clientes": [
+    {
+      "nombre": "Enrique Santos García ",
+      "telefono": "98544279",
+      "empresa": "APPLAND",
+      "correo": "enriquegarcia822@gmail.com",
+      "id": 3
+    },
+    {
+      "nombre": "Carlos Omar Guerra",
+      "telefono": "98756344",
+      "empresa": "Atlántida",
+      "correo": "Omar@gmail.com",
+      "id": 5
+    },
+    {
+      "nombre": "Shellsea",
+      "telefono": "98645349",
+      "empresa": "Consultorio Gonzáles ",
+      "correo": "shellsea@gmail.com",
+      "id": 6
+    },
+    {
+      "nombre": "Diana Gonzáles ",
+      "telefono": "89645349",
+      "empresa": "CRICOL",
+      "correo": "diana@diana.com",
+      "id": 7
+    }
+  ]
 }

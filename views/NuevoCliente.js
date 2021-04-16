@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet, Platform } from 'react-native'
 import { TextInput, Headline, Button,  Paragraph, Dialog, Portal } from 'react-native-paper'
 import globalStyles from '../styles/global'
 import axios from 'axios';
 
-const NuevoCliente = () => {
+const NuevoCliente = ({ navigation, route }) => {
+
+    //console.log(route.params)
+
+    //console.log(route.params)
+    const { guardarConsultarAPI } = route.params;
 
     //TODO: copiar lo mismo de APP para cambiar los colores de los inputText
 
@@ -14,6 +19,22 @@ const NuevoCliente = () => {
     const [ correo, guardarCorreo ] = useState('');
     const [ empresa, guardarEmpresa ] = useState('');
     const [ alerta, guardarAlerta ] = useState(false);
+
+
+    //--- detectar si estamos editando o no ---//
+    useEffect( () => {
+
+        if (route.params.cliente) {
+            const { nombre, telefono, correo, empresa } = route.params.cliente;
+
+            //--- para rellenar los campos del formulario para editarlo ---//
+            guardarNombre(nombre);
+            guardarTelefono(telefono);
+            guardarCorreo(correo);
+            guardarEmpresa(empresa);
+        }
+
+    },[]);
 
 
 
@@ -29,34 +50,50 @@ const NuevoCliente = () => {
 
         //--- generar el cliente ---//
         const cliente = { nombre, telefono, empresa, correo };
-        console.log(cliente)
+        //console.log(cliente)
 
+        //--- Si estamos editando o creando un nuevo cliente ---//
+        if (route.params.cliente) {
 
+            const { id } = route.params.cliente
+            cliente.id = id;
 
-        //--- guardar el cliente en la API ---//
-        try {
-
-            if (Platform.OS === 'ios' ) {
-                //--- para IOS --///
-                await axios.post('http://localhost:3000/clientes', cliente)
+            if (Platform.OS === 'ios') {
+                await axios.put(`http://localhost:3000/clientes/${id}`, cliente)
             }else{
+
                 //--- para android --//
-                await axios.post('http://10.0.2.2:3000/clientes', cliente)
-            }   
+                await axios.put(`http://192.168.33.106:3000/clientes/${id}`, cliente)
+            }
+            
+        }else{
+            //--- guardar el cliente en la API ---//
+            try {
 
-
-        } catch (error) {
-            console.log(error)
+                if (Platform.OS === 'ios' ) {
+                    //--- para IOS --///
+                    await axios.post('http://localhost:3000/clientes', cliente)
+                }else{
+                    //--- para android --//
+                    await axios.post('http://192.168.33.106:3000/clientes', cliente)
+                }   
+            } catch (error) {
+                console.log(error)
+            }
         }
 
-
         //--- redereccionar ---//
-
+        navigation.navigate('Inicio')
 
 
         //---  limpiar el form (opcional) ---//
+        guardarNombre('');
+        guardarCorreo('');
+        guardarEmpresa('');
+        guardarTelefono('');
 
-        
+        //--- cambiar a true para traernos el nuevo cliente ---//
+        guardarConsultarAPI(true)
     }
 
 

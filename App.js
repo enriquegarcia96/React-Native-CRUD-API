@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';// esto es lo primero que tiene que ir cuando use Stack nativagator
 import React from 'react';
-import {StyleSheet,  Text,  View } from 'react-native';
+import {StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -10,7 +10,6 @@ import { DefaultTheme, Provider as PaperProvider  } from 'react-native-paper';
 import Inicio from './views/Inicio';
 import DetallesCliente from './views/DetallesCliente';
 import NuevoCliente from './views/NuevoCliente';
-import BarraSuperior from './components/ui/Barra'
 
 const Stack = createStackNavigator();
 
@@ -50,10 +49,10 @@ const App = () => {
                 component={Inicio}
                 options={ ({ navigation, route }) => ({
 
-                  headerLeft: (props) => <BarraSuperior {...props} 
+                  /*headerLeft: (props) => <BarraSuperior {...props} 
                                       navigation={navigation}
                                       route={route}
-                                    />
+                                    />*/
                 }) }
                             
               />
