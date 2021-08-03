@@ -1,5 +1,7 @@
 # REACT NATIVE ⚛ CRUD API USANDO JSON.SERVER SIMULADO UNA API FALSA.
 
+## ejecutar el comando para levantar la API ` json-server --watch db.json`
+
 ## Instalar react-navigation/native
 `npm install @react-navigation/native`
 
